@@ -1,22 +1,16 @@
 ---
-site: Pet Photos
 layout: base
 ---
-<h1>{{ site }}</h1>
-
-{% unless page.url == '/' %}
-    <a href="{{ '/' | url }}">Home</a>
-{% endunless %}
-
 {{ content }}
 
-<ul>
-    {% for photo in collections.photos %}
-        <li>
-            <a href="{{ photo.url | url }}">
-                A {{ photo.data.photo_keyword }} photo
-                by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
-            </a>
-        </li>
-    {% endfor %}
-</ul>
+{% if photographer_username %}
+<p>Photo by {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
+{% endif %}
+
+{% if exif_camera_model %}
+<p>Camera Model: {{ exif_camera_model }}</p>
+{% endif %}
+
+{% if stats_views %}
+<p>Views: {{ stats_views }}</p>
+{% endif %}
