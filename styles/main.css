@@ -7,15 +7,12 @@ a:hover {
     background-color: gold;
 }
 
-nav {
-    align-items: left;
+body {
+    text-align: left;
 }
 
 header {
-    margin-bottom: 0px;
-    padding-bottom: 0px;
-    text-align: left;
-    background-color: ;
+    text-align: center;
 }
 
 #logo {
@@ -25,15 +22,25 @@ header {
     vertical-align: middle;
 }
 
-#header-text {
+.header-text {
     text-align: center;
     font-family: didot;
     font-size: 32pt;
-    vertical-align: top
 }
 
-body {
-    text-align: left;
+nav {
+    align-items: left;
+}
+
+.header-nav a{
+    background-color: lightblue;
+    width: 20%;
+    float: left;
+    font-size: 16pt;
+}
+
+.header-nav a:hover{
+    background-color: lightgreen;
 }
 
 main {
@@ -45,8 +52,6 @@ main {
 
 .pagination-nav {
     text-align: center;
-    box-sizing: content-box;
-    width: 100%;
 }
 
 .footer-text{
