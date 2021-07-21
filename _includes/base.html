@@ -1,13 +1,55 @@
+---
+site: Pet Photos
+---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>{{ title }} - {{ site }}</title>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
-        <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
-    </head>
-    <body>
+
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+    <link rel="stylesheet" href="{{ '/styles/main.css' | url }}">
+    <title>{{ site }}</title>
+</head>
+
+<body style="background-color:{{ color_keyword }};">
+    <header>
+        <div class="header">
+            <img id="logo" alt="logo" src="https://cdn.shopify.com/s/files/1/0099/9562/files/Header-Icon-Logo.png?14597416339728210630" >
+            <span id="header-text">{{ site }}</span>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="{{ '/' | url }}">Home</a> |
+                <a href="{{ '/about' | url }}">About Us</a> |
+                <a>Filler</a> |
+                <a>Filler</a> |
+                <a>Filler</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
         {{ content }}
-    </body>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <font color="grey">&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="footer-nav">
+            <nav>
+                <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a> |
+                <a>Filler</a> |
+                <a>Filler</a> |
+                <a>Filler</a> |
+                <a>Filler</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
 </html>
