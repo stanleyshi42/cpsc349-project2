@@ -33,15 +33,11 @@ header {
 
 .header-nav {
     background-color: lightgray;
-    width: 100%;
 }
 
 /* Help from:
    https://www.w3schools.com/howto/howto_js_topnav.asp */
 .header-nav a{
-    float: left;
-    padding: 14px 16px;
-    background-color: lightgray;
     font-size: 16pt;
 }
 
@@ -50,8 +46,7 @@ header {
 }
 
 main {
-    padding-left: 50px;
-    padding-top: 25px;
+    padding: 50px;
 }
 
 .pagination-list a{
