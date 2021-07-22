@@ -1,10 +1,9 @@
 ---
-title: Welcome
 layout: baseFlex
 
 pagination:
     data: collections.photos
-    size: 10
+    size: 9
     alias: myPhotos
 ---
 <p>
@@ -14,17 +13,17 @@ pagination:
     </a>
 </p>
 <div class="pagination-list">
-    <ul>
-        {% for photo in myPhotos %}
-        <li>
+    {% for photo in myPhotos %}
+        <div class="pagination-entry">
             <a href="{{ photo.url | url }}">
-                 A {{ photo.data.photo_keyword }} photo
+                <img class="thumbnail" src="{{ photo.data.photo_image_url }}"/>
+            </a>
+            <a href="{{ photo.url | url }}">
+                A {{ photo.data.photo_keyword }} photo
                 by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
             </a>
-            <br>{{photo.data.ai_description}}
-        </li>
-        {% endfor %}
-    </ul>
+        </div>
+    {% endfor %}
 </div>
 
 <nav class="pagination-nav">
