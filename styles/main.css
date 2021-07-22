@@ -8,54 +8,84 @@ a:hover {
 }
 
 body {
-    text-align: left;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
 }
 
 header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+
     text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background-color: lightgray;
 }
 
 #logo {
-    width: 35px;
-    height: 35px;
+    width: auto;
+    height: 64px;
     float: left;
-    vertical-align: middle;
 }
 
 .header-text {
-    text-align: center;
+    padding-left: 50px;
+    text-align: left;
     font-family: didot;
     font-size: 32pt;
 }
 
 nav {
-    align-items: left;
+    text-align: center;
 }
 
 .header-nav a{
-    background-color: lightblue;
+    background-color: lightgray;
     width: 20%;
     float: left;
     font-size: 16pt;
 }
 
 .header-nav a:hover{
-    background-color: lightgreen;
+    background-color: gray;
 }
 
 main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-left: 50px;
+    padding-top: 25px;
 }
 
-.pagination-nav {
+.pagination-nav{
+    margin-top: 25px;
+}
+
+.pagination-nav *{
+    float: left;
+    width: 10%;
     text-align: center;
+}
+
+.photo{
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer{
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .footer-text{
     text-align: center;
+    color: grey;
+    clear: left
 }
 
 .footer-nav{
