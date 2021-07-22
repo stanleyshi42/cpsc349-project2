@@ -1,16 +1,18 @@
 ---
 layout: base
 ---
-{{ content }}
+<div class="photo">
+    {{ content }}
 
-{% if photographer_username %}
-<p>Photo by {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
-{% endif %}
+    {% if photographer_username %}
+    <p>Photo by {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
+    {% endif %}
 
-{% if exif_camera_model %}
-<p>Camera Model: {{ exif_camera_model }}</p>
-{% endif %}
+    {% if exif_camera_model %}
+    <p>Camera Model: {{ exif_camera_model }}</p>
+    {% endif %}
 
-{% if stats_views %}
-<p>Views: {{ stats_views }}</p>
-{% endif %}
+    {% if stats_views %}
+    <p>Views: {{ stats_views }}</p>
+    {% endif %}
+</div>

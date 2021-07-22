@@ -31,7 +31,7 @@ pagination:
     {% if pagination.href.previous %}<a href="{{pagination.href.previous | url }}">&lt;-Previous</a> 
     {% else %}<span></span>{% endif %}
     
-    {{ pagination.pageNumber | plus: 1}}
+    <span>{{ pagination.pageNumber | plus: 1}}</span>
     
     {% if pagination.href.next %}<a href="{{pagination.href.next | url }}" >Next-&gt;</a>
     {% else %}<span></span>{% endif %}
