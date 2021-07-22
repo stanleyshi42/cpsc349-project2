@@ -1,0 +1,99 @@
+a {
+    color: #007BFF;
+    transition: background-color .5s;
+}
+
+a:hover {
+    background-color: gold;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+header {
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    background-color: lightgray;
+}
+
+#logo {
+    width: auto;
+    height: 64px;
+    float: left;
+}
+
+.header-text {
+    padding-left: 50px;
+    text-align: left;
+    font-family: didot;
+    font-size: 32pt;
+}
+
+nav {
+    text-align: center;
+}
+
+/* Help from:
+   https://www.w3schools.com/howto/howto_js_topnav.asp */
+.header-nav a{
+    float: left;
+    padding: 14px 16px;
+    background-color: lightgray;
+    font-size: 16pt;
+}
+
+.header-nav a:hover{
+    background-color: gray;
+}
+
+main {
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+.pagination-list a{
+    font-size: 16pt;
+}
+
+.pagination-nav{
+    margin-top: 25px;
+}
+
+.pagination-nav *{
+    float: left;
+    width: 10%;
+    text-align: center;
+}
+
+.photo{
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+
+footer{
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.footer-text{
+    text-align: center;
+    color: grey;
+    clear: left
+}
+
+.footer-nav{
+    text-align: center;
+}

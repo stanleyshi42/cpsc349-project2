@@ -5,3 +5,7 @@ node_modules/
 unsplash/*.tsv*
 unsplash/README.md
 unsplash/TERMS.md
+base
+flex
+grid
+tail

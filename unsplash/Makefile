@@ -37,7 +37,15 @@ photos.tsv: photos.tsv000 colors.tsv photos.sql
 	q -t -H -O "$(shell cat photos.sql)" > $@
 
 ../photos: photos.tsv photos.py
-	mkdir -p ../photos
+	mkdir -p ../base
+	mkdir -p ../flex
+	mkdir -p ../grid
+	mkdir -p ../tail
+	mkdir -p ../base/photos
+	mkdir -p ../flex/photos
+	mkdir -p ../grid/photos
+	mkdir -p ../tail/photos
+
 	python3 photos.py $<
 
 clean:
