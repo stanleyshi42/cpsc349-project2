@@ -18,6 +18,7 @@ pagination:
             <a href="{{ photo.url | url }}">
                 <img class="thumbnail" src="{{ photo.data.photo_image_url }}"/>
             </a>
+            <br>
             <a href="{{ photo.url | url }}">
                 A {{ photo.data.photo_keyword }} photo
                 by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
@@ -26,7 +27,7 @@ pagination:
     {% endfor %}
 </div>
 
-<nav class="pagination-nav">
+<div class="pagination-nav">
     {% if pagination.href.previous %}<a href="{{pagination.href.previous | url }}">&lt;-Previous</a> 
     {% else %}<span></span>{% endif %}
     
@@ -34,4 +35,4 @@ pagination:
     
     {% if pagination.href.next %}<a href="{{pagination.href.next | url }}" >Next-&gt;</a>
     {% else %}<span></span>{% endif %}
-</nav>
+</div>
