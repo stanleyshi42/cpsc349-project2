@@ -10,7 +10,7 @@ with open(sys.argv[1]) as tsvfile:
     n = 0
     for row in photoreader:
         description = row.pop('photo_description')
-        row['tags'] = 'photos'
+        row['tags'] = 'photosBase'
         row['layout'] = 'pets'
         with open(f'../base/photos/{n:03}.html', 'w') as f:
             yaml.dump(row, f, explicit_start=True)
@@ -27,7 +27,7 @@ with open(sys.argv[1]) as tsvfile:
     n = 0
     for row in photoreader:
         description = row.pop('photo_description')
-        row['tags'] = 'photos'
+        row['tags'] = 'photosGrid'
         row['layout'] = 'petsGrid'
         with open(f'../grid/photos/{n:03}.html', 'w') as f:
             yaml.dump(row, f, explicit_start=True)
@@ -44,7 +44,7 @@ with open(sys.argv[1]) as tsvfile:
     n = 0
     for row in photoreader:
         description = row.pop('photo_description')
-        row['tags'] = 'photos'
+        row['tags'] = 'photosFlex'
         row['layout'] = 'petsFlex'
         with open(f'../flex/photos/{n:03}.html', 'w') as f:
             yaml.dump(row, f, explicit_start=True)
@@ -61,7 +61,7 @@ with open(sys.argv[1]) as tsvfile:
     n = 0
     for row in photoreader:
         description = row.pop('photo_description')
-        row['tags'] = 'photos'
+        row['tags'] = 'photosTail'
         row['layout'] = 'petsTail'
         with open(f'../tail/photos/{n:03}.html', 'w') as f:
             yaml.dump(row, f, explicit_start=True)
