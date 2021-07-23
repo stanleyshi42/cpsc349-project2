@@ -9,12 +9,18 @@ a:hover {
 }
 
 body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
     margin: 0px;
+    font-family: verdana;
 }
 
 header {
+    width: 100%;
     padding-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     background-color: lightgray;
 }
 
@@ -35,10 +41,12 @@ header {
     background-color: lightgray;
 }
 
-/* Help from:
-   https://www.w3schools.com/howto/howto_js_topnav.asp */
 .header-nav a{
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
     font-size: 16pt;
+    font-family: verdana;
 }
 
 .header-nav a:hover{
@@ -47,18 +55,16 @@ header {
 
 main {
     padding: 50px;
-}
-
-.pagination-list a{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    padding-top: 25px;
 }
 
 .pagination-entry {
     float: left;
     width: 33%;
     height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
 .pagination-entry:hover{
@@ -70,20 +76,26 @@ main {
     width: 150px;
 }
 
-.pagination-nav{
-    margin-top: 25px;
-}
-
-.pagination-nav *{
-    float: left;
-    width: 10%;
-    text-align: center;
-}
-
 .photo{
     max-width: 50%;
     height: auto;
     margin: 0 auto;
+}
+
+.pagination-nav{
+    width: 100%;
+    align-items: center;
+}
+
+.pagination-nav *{
+    float: left;
+    text-align: center;
+    padding: 10px;
+    width: 100px;
+}
+
+footer {
+    width: 100%;
 }
 
 .footer-text{
