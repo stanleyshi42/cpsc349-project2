@@ -10,9 +10,45 @@ site: Pet Photos
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/styles/grid.css' | url }}">
     <title>{{ site }}</title>
+     <style>
+   :root {
+  --red: {{red}};
+  --green: {{green}};
+  --blue: {{blue}};
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+    
 </head>
 
-<body style="background-color:{{ color_keyword }};">
+<body>
     <header>
         <div class="header-text">
             <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
