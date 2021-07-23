@@ -2,17 +2,22 @@
 layout: baseGrid
 ---
 <div class="photo">
+    <div class="pet-photo">
     {{ content }}
-
+    </div>
     {% if photographer_username %}
-    <p>Photo by {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
-    {% endif %}
+    <div class="picture-details">
+        <p>Photo by {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
+        {% endif %}
+    
+        {% if exif_camera_model %}
+        <p>Camera Model: {{ exif_camera_model }}</p>
+        {% endif %}
+    
+        {% if stats_views %}
+        <p>Views: {{ stats_views }}</p>
+        {% endif %}
+    </div>
 
-    {% if exif_camera_model %}
-    <p>Camera Model: {{ exif_camera_model }}</p>
-    {% endif %}
 
-    {% if stats_views %}
-    <p>Views: {{ stats_views }}</p>
-    {% endif %}
 </div>

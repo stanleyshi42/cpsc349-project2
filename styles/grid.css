@@ -114,3 +114,7 @@ footer{
     display: grid;
     grid-template-columns: 40% 60%;
 }
+
+figure {
+    grid-area: phts;
+}
