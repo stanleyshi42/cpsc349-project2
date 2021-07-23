@@ -33,8 +33,8 @@ header {
 .header-text {
     padding-left: 50px;
     text-align: left;
-    font-family: didot;
     font-size: 32pt;
+    font-weight: bold;
 }
 
 .header-nav {
@@ -74,6 +74,8 @@ main {
 .thumbnail {
     height: 150px;
     width: 150px;
+    border-radius: 50%;
+    filter: drop-shadow(5px 5px 5px silver);
 }
 
 .photo{
