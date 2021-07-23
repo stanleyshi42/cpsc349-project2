@@ -79,7 +79,9 @@ main {
 .photo{
     max-width: 50%;
     height: auto;
-    margin: 0 auto;
+    margin: auto auto;
+    text-align: center;
+
 }
 
 .pagination-nav{
@@ -107,3 +109,16 @@ footer {
 .footer-nav{
     text-align: center;
 }
+
+figure {
+    margin: 0;
+    display: inline-block;
+}
+
+figure > img {
+    border-radius: 10px;
+    max-width: 50%;
+    height: auto;
+
+}
+
