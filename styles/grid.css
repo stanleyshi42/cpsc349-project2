@@ -97,3 +97,8 @@ footer{
 .footer-nav{
     text-align: center;
 }
+
+.GridContainer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
