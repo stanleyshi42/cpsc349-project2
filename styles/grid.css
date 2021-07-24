@@ -142,3 +142,7 @@ figure{
     grid-area: phts;
     margin: 0;
 }
+
+.side-bar{
+    text-align: right;
+}
