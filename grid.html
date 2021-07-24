@@ -7,12 +7,13 @@ pagination:
     size: 10
     alias: myPhotos
 ---
+
 <div class="pagination-list">
     <ul>
         {% for photo in myPhotos %}
         <li>
             <a href="{{ photo.url | url }}">
-                A {{ photo.data.photo_keyword }} photo
+
                 by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
             </a>
             <br>{{photo.data.ai_description}}
@@ -22,11 +23,11 @@ pagination:
 </div>
 
 <nav class="pagination-nav">
-    {% if pagination.href.previous %}<a href="{{ pagination.href.previous | url }}">&lt;-Previous</a> 
+
     {% else %}<span></span>{% endif %}
     
     <span>{{ pagination.pageNumber | plus: 1}}</span>
     
-    {% if pagination.href.next %}<a href="{{ pagination.href.next | url }}" >Next-&gt;</a>
+
     {% else %}<span></span>{% endif %}
 </nav>
