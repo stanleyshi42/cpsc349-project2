@@ -11,7 +11,7 @@ a:hover{
 
 body{
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 85% 15%;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
         "hd hd"
@@ -21,6 +21,7 @@ body{
         "ft ft";
 
     margin: 0px;
+    font-family: verdana;
 }
 
 header{
@@ -100,7 +101,6 @@ main{
 
     max-width: 100%;
     height: auto;
-    
 }
 
 .pet-photo{
@@ -148,8 +148,9 @@ figure > img {
     height: auto;
 }
 
-.side-content img{
-    vertical-align: bottom;
-    max-width: 20%;
-    height: auto;
+.side-content a{
+    padding: 10px;
+    font-size: 16pt;
+    display: block;
+    text-align: center;
 }
