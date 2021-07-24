@@ -1,14 +1,15 @@
-a {
+a{
     color: #007BFF;
     transition: background-color .5s;
+    text-decoration: none;
     font-family: verdana;
 }
 
-a:hover {
+a:hover{
     background-color: gold;
 }
 
-body {
+body{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto;
@@ -22,7 +23,7 @@ body {
     margin: 0px;
 }
 
-header {
+header{
     grid-area: hd;
     grid-row-start: 1;
     grid-row-end: 2;
@@ -32,13 +33,13 @@ header {
     background-color: lightgray;
 }
 
-#logo {
+#logo{
     width: auto;
     height: 64px;
     float: left;
 }
 
-.header-text {
+.header-text{
     grid-area: header-text;
     padding-left: 50px;
     text-align: left;
@@ -46,7 +47,7 @@ header {
     font-size: 32pt;
 }
 
-nav {
+nav{
     text-align: center;
 }
 
@@ -63,7 +64,7 @@ nav {
     background-color: gray;
 }
 
-main {
+main{
     grid-row-start: 2;
     grid-row-end: 3;
 
@@ -95,9 +96,20 @@ main {
 }
 
 .photo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
     max-width: 50%;
     height: auto;
-    margin: 0 auto;
+    margin-left: 20%;
+}
+
+.pet-photo{
+    text-align: left;
+}
+
+.picture-details{
+    text-align: left;
 }
 
 footer{
@@ -105,12 +117,16 @@ footer{
     grid-row-end: 4;
     grid-column-start: 1;
     grid-column-end: 3;
+
+    padding-top: 50px;
 }
 
 .footer-text{
+    padding: 0;
     text-align: center;
     color: grey;
-    clear: left
+    clear: left;
+    font-family: verdana;
 }
 
 .footer-nav{
@@ -122,6 +138,7 @@ footer{
     grid-template-columns: 40% 60%;
 }
 
-figure {
+figure{
     grid-area: phts;
+    margin: 0;
 }
