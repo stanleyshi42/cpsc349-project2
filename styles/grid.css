@@ -41,9 +41,9 @@ header{
 }
 
 .header-text{
+    color:black;
     padding-left: 30px;
     text-align: left;
-    font-family: verdana;
     font-size: 32pt;
 }
 
@@ -71,8 +71,14 @@ main{
     padding-top: 25px;
 }
 
-.pagination-list {
+/* .pagination-list {
     grid-area: links;
+} */
+
+
+
+.pet-link {
+    grid-area:links;
 }
 
 .pagination-list a{
@@ -95,7 +101,6 @@ main{
 }
 
 .photo{
-
     max-width: 100%;
     height: auto;
 }
@@ -153,6 +158,7 @@ figure > img {
 .side-content a:hover{
     background-color: coral;
 }
+
 
 span {
     

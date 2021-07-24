@@ -7,15 +7,15 @@ layout: baseFlex
     </div>
     {% if photographer_username %}
     <div class="picture-details">
-        <p>Photo by {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
+        <p><b>Photo by</b> {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
         {% endif %}
     
         {% if exif_camera_model %}
-        <p>Camera Model: {{ exif_camera_model }}</p>
+        <p><b>Camera Model:</b> {{ exif_camera_model }}</p>
         {% endif %}
     
         {% if stats_views %}
-        <p>Views: {{ stats_views }}</p>
+        <p><b>Views:</b> {{ stats_views }}</p>
         {% endif %}
     </div>
 
