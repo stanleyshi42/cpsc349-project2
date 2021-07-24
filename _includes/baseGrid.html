@@ -9,24 +9,24 @@ site: Pet Photos
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ '/styles/grid.css' | url }}">
     <title>{{ site }}</title>
-     <style>
-   :root {
-  --red: {{red}};
-  --green: {{green}};
-  --blue: {{blue}};
+    <style>
+    :root {
+    --red: {{red}};
+    --green: {{green}};
+    --blue: {{blue}};
 
-  --accessible-color: calc(
-    (
-      (
+      --accessible-color: calc(
         (
-          (var(--red) * 299) +
-          (var(--green) * 587) +
-          (var(--blue) * 114)
-        ) / 1000
-      ) - 128
-    ) * -1000
-  );
-}
+          (
+            (
+              (var(--red) * 299) +
+              (var(--green) * 587) +
+              (var(--blue) * 114)
+            ) / 1000
+          ) - 128
+        ) * -1000
+      );
+    }
 
 body {
   color:
@@ -70,13 +70,13 @@ body {
 
     <footer>
         <div class="footer-text">
-            <span>&copy; Copyright 2021 Team 5</font>
-        </div>
-
-        <div class="footer-nav">
-            <nav>
-                <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a> 
-            </nav>
+            <p>
+              &copy; Copyright 2021 <a href="https://github.com/quentinmay/cpsc349-project2">Team 5</a>
+            </p>
+            <p>
+              Pet photos from <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+    </a>
         </div>
     </footer>
 </body>
