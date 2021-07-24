@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+SC&display=swap');
 a{
     color: #007BFF;
     transition: background-color .5s;
     text-decoration: none;
-    font-family: verdana;
+    font-family: 'Encode Sans SC', sans-serif;
 }
 
 a:hover{
@@ -10,8 +11,9 @@ a:hover{
 }
 
 body{
+    
     display: grid;
-    grid-template-columns: 85% 15%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto;
     grid-template-areas:
         "hd hd"
@@ -21,13 +23,11 @@ body{
         "ft ft";
 
     margin: 0px;
-    font-family: verdana;
+    font-family: 'Encode Sans SC', sans-serif;
 }
 
 header{
     grid-area: hd;
-    grid-row-start: 1;
-    grid-row-end: 2;
 
     text-align: center;
     padding-top: 30px;
@@ -41,7 +41,6 @@ header{
 }
 
 .header-text{
-    grid-area: header-text;
     padding-left: 30px;
     text-align: left;
     font-family: verdana;
@@ -65,8 +64,6 @@ nav{
 }
 
 main{
-    grid-row-start: 2;
-    grid-row-end: 3;
 
     margin-top: 0px;
     margin-bottom: 0px;
@@ -74,21 +71,23 @@ main{
     padding-top: 25px;
 }
 
-.pagination-list a{
+.pagination-list {
     grid-area: links;
+}
+
+.pagination-list a{
 
     font-size: 16pt;
 }
 
 .pagination-nav{
-    grid-area: ft;
+    grid-area: pagination;
 
     margin-top: 25px;
     text-align: left;
 }
 
 .pagination-nav *{
-    /* float: left; */
     width: 10%;
     padding: 10px;
     text-align: center;
@@ -96,27 +95,23 @@ main{
 }
 
 .photo{
-    grid-column-start: 1;
-    grid-column-end: 3;
 
     max-width: 100%;
     height: auto;
 }
 
 .pet-photo{
+    grid-area: phts;
     text-align: left;
 }
 
 .picture-details{
+    grid-area: links;
     text-align: left;
 }
 
 footer{
-    grid-row-start: 3;
-    grid-row-end: 4;
-    grid-column-start: 1;
-    grid-column-end: 3;
-
+    grid-area: ft;
     padding-top: 50px;
 }
 
@@ -125,20 +120,13 @@ footer{
     text-align: center;
     color: grey;
     clear: left;
-    font-family: verdana;
 }
 
 .footer-nav{
     text-align: center;
 }
 
-.GridContainer{
-    display: grid;
-    grid-template-columns: 40% 60%;
-}
-
 figure{
-    grid-area: phts;
     margin: 0;
 }
 
@@ -146,6 +134,11 @@ figure > img {
     border-radius: 10px;
     max-width: 80%;
     height: auto;
+    filter:drop-shadow(5px 5px 5px rgb(65, 65, 65));
+}
+
+.side-content {
+    grid-area: nav;
 }
 
 .side-content a{
@@ -159,4 +152,9 @@ figure > img {
 
 .side-content a:hover{
     background-color: coral;
+}
+
+span {
+    
+    font-family: 'Encode Sans SC', sans-serif;
 }
