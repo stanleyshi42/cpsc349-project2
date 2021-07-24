@@ -56,12 +56,11 @@ nav{
 .header-nav a{
     float: left;
     padding: 14px 16px;
-    background-color: lightgray;
     font-size: 16pt;
 }
 
 .header-nav a:hover{
-    background-color: gray;
+    background-color: coral;
 }
 
 main{
