@@ -153,4 +153,10 @@ figure > img {
     font-size: 16pt;
     display: block;
     text-align: center;
+    background-color: orange;
+    color: black;
+}
+
+.side-content a:hover{
+    background-color: coral;
 }
