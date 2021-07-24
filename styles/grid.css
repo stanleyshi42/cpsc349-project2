@@ -30,7 +30,7 @@ header{
 
     text-align: center;
     padding-top: 30px;
-    background-color: lightgray;
+    background-color: orange;
 }
 
 #logo{
@@ -41,7 +41,7 @@ header{
 
 .header-text{
     grid-area: header-text;
-    padding-left: 50px;
+    padding-left: 30px;
     text-align: left;
     font-family: verdana;
     font-size: 32pt;
@@ -99,9 +99,9 @@ main{
     grid-column-start: 1;
     grid-column-end: 3;
 
-    max-width: 50%;
+    max-width: 100%;
     height: auto;
-    margin-left: 20%;
+    
 }
 
 .pet-photo{
@@ -141,4 +141,16 @@ footer{
 figure{
     grid-area: phts;
     margin: 0;
+}
+
+figure > img {
+    border-radius: 10px;
+    max-width: 80%;
+    height: auto;
+}
+
+.side-content img{
+    vertical-align: bottom;
+    max-width: 20%;
+    height: auto;
 }
