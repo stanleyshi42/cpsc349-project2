@@ -17,7 +17,7 @@ pagination:
     {% for photo in myPhotos %}
         <div class="pagination-cover">
             <a href="{{ photo.url | url }}">
-                <img class= "image-center" src="{{ photo.data.photo_image_url }}"/>
+                <img alt="thumbnail" class= "image-center" src="{{ photo.data.photo_image_url }}"/>
             </a>
             <br>
             <a class="link-color" href="{{ photo.url | url }}">
