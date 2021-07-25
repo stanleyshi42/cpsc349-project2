@@ -1,0 +1,80 @@
+---
+site: Pet Photos
+---
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{ '/styles/tailwind.css' | url }}">
+    <title>{{ site }}</title>
+     <style>
+   :root {
+  --red: {{red}};
+  --green: {{green}};
+  --blue: {{blue}};
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body class="flex flex-wrap justify-center m-0 font-serif">
+    <header class="w-full pt-2.5 mb-0 bg-gray-200">
+        <div class="text-left text-3xl font-bold pl-5">
+            <img class="w-auto float-left h-16" id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>{{ site }}</span>
+        </div>
+
+        <div class="pl-4 pr-4 text-center text-xl font-serif">
+                <a class="nav-style" href="{{ '/' | url }}">Base Home</a> 
+                <a class="nav-style" href="{{ '/grid' | url }}"> Grid Home</a>
+                <a class="nav-style" href="{{ '/flex' | url }}"> Flex Home</a>
+                <a class="nav-style" href="{{ '/tail' | url }}"> Tail Home</a>
+                <a class="nav-style" href="{{ '/aboutTail' | url }}">About Us</a> 
+        </div>
+    </header>
+
+    <main class="w-4/5 h-4/5 p-12 pt-6">
+        {{ content }}
+    </main>
+
+    <footer class="w-full">
+        <div class="text-center text-gray-400 clear-left">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="text-center text-blue-700">
+              <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a> 
+        </div>
+    </footer>
+</body>
+
+</html>

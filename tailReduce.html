@@ -1,0 +1,39 @@
+---
+title: Welcome
+layout: baseTail
+
+pagination:
+    data: collections.photosTail
+    size: 9
+    alias: myPhotos
+---
+<p>
+    Pet photos from
+    <a class="link-color" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div>
+    {% for photo in myPhotos %}
+        <div class="pagination-cover">
+            <a href="{{ photo.url | url }}">
+                <img class= "image-center" src="{{ photo.data.photo_image_url }}"/>
+            </a>
+            <br>
+            <a class="link-color" href="{{ photo.url | url }}">
+                A {{ photo.data.photo_keyword }} photo
+                by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+<div class="w-full h-full space-x-10">
+    {% if pagination.href.previous %}<a class="link-color" href="{{pagination.href.previous | url }}">&lt;-Previous</a> 
+    {% else %}<span></span>{% endif %}
+    
+    <span>{{ pagination.pageNumber | plus: 1}}</span>
+    
+    {% if pagination.href.next %}<a class="link-color" href="{{pagination.href.next | url }}" >Next-&gt;</a>
+    {% else %}<span></span>{% endif %}
+</div>
