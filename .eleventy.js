@@ -1,10 +1,5 @@
 module.exports = function (eleventyConfig) {
     eleventyConfig.setUseGitIgnore(false);
     eleventyConfig.addPassthroughCopy("images");
-    eleventyConfig.addPassthroughCopy("styles/main.css");
-    eleventyConfig.addPassthroughCopy("styles/grid.css");
-    eleventyConfig.addPassthroughCopy("styles/flex.css");
-};
-module.exports = {
-    pathPrefix: "/cpsc349-project2"
+    eleventyConfig.addPassthroughCopy("styles");
 };
