@@ -16,7 +16,7 @@ pagination:
     {% for photo in myPhotos %}
         <div class="pagination-entry">
             <a href="{{ photo.url | url }}">
-                <img class="thumbnail" src="{{ photo.data.photo_image_url }}"/>
+                <img alt="" class="thumbnail" src="{{ photo.data.photo_image_url }}"/>
             </a>
             <br>
             <a href="{{ photo.url | url }}">

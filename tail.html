@@ -17,7 +17,7 @@ pagination:
     {% for photo in myPhotos %}
         <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
             <a href="{{ photo.url | url }}">
-                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="{{ photo.data.photo_image_url }}"/>
+                <img alt="thumbnail" class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="{{ photo.data.photo_image_url }}"/>
             </a>
             <br>
             <a class="text-blue-700" href="{{ photo.url | url }}">
