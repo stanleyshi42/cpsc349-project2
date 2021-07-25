@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
+    <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
+    <title>Pet Photos</title>
+    <style>
+   :root {
+  --red: 49;
+  --green: 52;
+  --blue: 49;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style> 
+     
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-text">
+            <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>Pet Photos</span>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="/cpsc349-project2/">Base Home</a> 
+                <a href="/cpsc349-project2/grid"> Grid Home</a>
+                <a href="/cpsc349-project2/flex"> Flex Home</a>
+                <a href="/cpsc349-project2/tail"> Tail Home</a>
+                <a href="/cpsc349-project2/about">About Us</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="photo">
+    <div class="pet-photo">
+        <figure>
+        <img src="https://images.unsplash.com/photo-1586320902477-24c19029bd4a" height="600" />
+        <figcaption>Black dog in black background with beautifull eyes and nice hair</figcaption>
+    </figure>
+
+    </div>
+    
+    <div class="picture-details">
+        <p><b>Photo by</b> Alan Quirvan: <a href="https://unsplash.com/@quirva">https://unsplash.com/@quirva</a></p>
+        
+    
+        
+        <p><b>Camera Model:</b> Canon EOS Rebel T6</p>
+        
+    
+        
+        <p><b>Views:</b> 1008858</p>
+        
+    </div>
+
+
+</div>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="footer-nav">
+            <nav>
+                <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

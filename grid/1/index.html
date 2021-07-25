@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/grid.css">
+    <title>Pet Photos</title>
+    <style>
+    :root {
+    --red: ;
+    --green: ;
+    --blue: ;
+
+      --accessible-color: calc(
+        (
+          (
+            (
+              (var(--red) * 299) +
+              (var(--green) * 587) +
+              (var(--blue) * 114)
+            ) / 1000
+          ) - 128
+        ) * -1000
+      );
+    }
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+  <header>
+      <div class="header-text">
+          <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+          <span>Pet Photos</span>
+      </div>
+  </header>
+
+    <main>
+        <p>
+    Pet photos from
+    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div class="pagination-list">
+    <ul>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/010/">
+                 A dog photo
+                by Neil Cooper
+            </a>
+            <br>brown puppy lying on textile
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/011/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>three brown Cocker Spaniel dogs
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/012/">
+                 A dog photo
+                by Paul Kapischka
+            </a>
+            <br>short-coated tan dog wearing blue collar
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/013/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>woman carrying black French bulldog
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/014/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>dog in pink jacket
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/015/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>tan and white chihuahua near green pine tree
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/016/">
+                 A dog photo
+                by Jay Wennington
+            </a>
+            <br>brown poodle wearing red knit hat
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/017/">
+                 A cat photo
+                by Eduardo Mallmann
+            </a>
+            <br>closeup photo of black cat
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/018/">
+                 A cat photo
+                by David Peters
+            </a>
+            <br>selective focus photography of cat
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/019/">
+                 A cat photo
+                by Allie 
+            </a>
+            <br>lying brown tabby cat on gravel
+        </li>
+        
+    </ul>
+</div>
+
+<nav class="pagination-nav">
+    <a href="/cpsc349-project2/grid/">&lt;-Previous</a> 
+    
+    
+    <span>2</span>
+    
+    <a href="/cpsc349-project2/grid/2/" >Next-&gt;</a>
+    
+</nav>
+    </main>
+
+    <div class="side-content">
+        <a href="/cpsc349-project2/">Base Home</a> 
+        <a href="/cpsc349-project2/grid">Grid Home</a>
+        <a href="/cpsc349-project2/flex">Flex Home</a>
+        <a href="/cpsc349-project2/tail">Tail Home</a>
+        <a href="/cpsc349-project2/aboutGrid">About Us</a> 
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>
+              &copy; Copyright 2021 <a href="https://github.com/quentinmay/cpsc349-project2">Team 5</a>
+            </p>
+            <p>
+              Pet photos from <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

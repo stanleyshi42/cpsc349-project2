@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
+    <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
+    <title>Pet Photos</title>
+    <style>
+   :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style> 
+     
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-text">
+            <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>Pet Photos</span>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="/cpsc349-project2/">Base Home</a> 
+                <a href="/cpsc349-project2/grid"> Grid Home</a>
+                <a href="/cpsc349-project2/flex"> Flex Home</a>
+                <a href="/cpsc349-project2/tail"> Tail Home</a>
+                <a href="/cpsc349-project2/about">About Us</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <p>
+    Pet photos from
+    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div class="pagination-list">
+    <ul>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/060/">
+                 A cat photo
+                by Alfons Taekema
+            </a>
+            <br>white and black cat standing beside green-leafed plant
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/061/">
+                 A dog photo
+                by Sincerely Media 
+            </a>
+            <br>white long coat small dog lying on yellow pillow
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/062/">
+                 A dog photo
+                by Carissa Weiser
+            </a>
+            <br>brown dog lying on sofa
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/063/">
+                 A cat photo
+                by René Peters
+            </a>
+            <br>two cats on gray petbed
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/064/">
+                 A dog photo
+                by Tobias 
+            </a>
+            <br>short-coated brown and white dog
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/065/">
+                 A dog photo
+                by Jonatan Pie
+            </a>
+            <br>white snow covered white dog on snow covered ground during daytime
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/066/">
+                 A dog photo
+                by Álvaro Niño
+            </a>
+            <br>brown puppy sitting on sofa
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/067/">
+                 A dog photo
+                by Samantha Ram
+            </a>
+            <br>black and white short coated dog
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/068/">
+                 A cat photo
+                by Florian Schneider
+            </a>
+            <br>closeup photo of dog's eye
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/069/">
+                 A dog photo
+                by Joseph Keil
+            </a>
+            <br>selective focus photography of white, brown, and black dog at daytime
+        </li>
+        
+    </ul>
+</div>
+
+<nav class="pagination-nav">
+    <a href="/cpsc349-project2/5/">&lt;-Previous</a> 
+    
+    
+    <span>7</span>
+    
+    <a href="/cpsc349-project2/7/" >Next-&gt;</a>
+    
+</nav>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="footer-nav">
+            <nav>
+                <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

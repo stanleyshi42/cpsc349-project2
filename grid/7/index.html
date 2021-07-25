@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/grid.css">
+    <title>Pet Photos</title>
+    <style>
+    :root {
+    --red: ;
+    --green: ;
+    --blue: ;
+
+      --accessible-color: calc(
+        (
+          (
+            (
+              (var(--red) * 299) +
+              (var(--green) * 587) +
+              (var(--blue) * 114)
+            ) / 1000
+          ) - 128
+        ) * -1000
+      );
+    }
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+  <header>
+      <div class="header-text">
+          <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+          <span>Pet Photos</span>
+      </div>
+  </header>
+
+    <main>
+        <p>
+    Pet photos from
+    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div class="pagination-list">
+    <ul>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/070/">
+                 A dog photo
+                by Wade Austin Ellis
+            </a>
+            <br>brown dog sitting bedside standing woman during daytime
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/071/">
+                 A dog photo
+                by Jack Millard
+            </a>
+            <br>running dog in bridge
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/072/">
+                 A cat photo
+                by Mark Sarmiento
+            </a>
+            <br>shallow focus photo of white and brown cat
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/073/">
+                 A hamster photo
+                by Melissa Keizer
+            </a>
+            <br>white and brown hamster on gray textile
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/074/">
+                 A rabbit photo
+                by Melissa Keizer
+            </a>
+            <br>brown rabbit on black soil
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/075/">
+                 A cat photo
+                by Fachy Marín
+            </a>
+            <br>focus photography of black cat
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/076/">
+                 A dog photo
+                by Yasin Hoşgör
+            </a>
+            <br>black and tan dog on seashore
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/077/">
+                 A dog photo
+                by Philipp Lansing
+            </a>
+            <br>brown and white long coated dog on forest during daytime
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/078/">
+                 A dog photo
+                by deanna alys
+            </a>
+            <br>white and brown cockerspaniel dog
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/079/">
+                 A dog photo
+                by Michelle Huber
+            </a>
+            <br>golden retriever on green grass field during daytime
+        </li>
+        
+    </ul>
+</div>
+
+<nav class="pagination-nav">
+    <a href="/cpsc349-project2/grid/6/">&lt;-Previous</a> 
+    
+    
+    <span>8</span>
+    
+    <a href="/cpsc349-project2/grid/8/" >Next-&gt;</a>
+    
+</nav>
+    </main>
+
+    <div class="side-content">
+        <a href="/cpsc349-project2/">Base Home</a> 
+        <a href="/cpsc349-project2/grid">Grid Home</a>
+        <a href="/cpsc349-project2/flex">Flex Home</a>
+        <a href="/cpsc349-project2/tail">Tail Home</a>
+        <a href="/cpsc349-project2/aboutGrid">About Us</a> 
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>
+              &copy; Copyright 2021 <a href="https://github.com/quentinmay/cpsc349-project2">Team 5</a>
+            </p>
+            <p>
+              Pet photos from <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/grid.css">
+    <title>Pet Photos</title>
+    <style>
+    :root {
+    --red: ;
+    --green: ;
+    --blue: ;
+
+      --accessible-color: calc(
+        (
+          (
+            (
+              (var(--red) * 299) +
+              (var(--green) * 587) +
+              (var(--blue) * 114)
+            ) / 1000
+          ) - 128
+        ) * -1000
+      );
+    }
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+  <header>
+      <div class="header-text">
+          <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+          <span>Pet Photos</span>
+      </div>
+  </header>
+
+    <main>
+        <p>
+    Pet photos from
+    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div class="pagination-list">
+    <ul>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/020/">
+                 A rabbit photo
+                by Sincerely Media 
+            </a>
+            <br>brown and white rabbits
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/021/">
+                 A dog photo
+                by Kseniia Shikhova
+            </a>
+            <br>black and tan german shepherd lying on bed
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/022/">
+                 A cat photo
+                by Slavy Darozhkin
+            </a>
+            <br>white and grey bicolor kitten
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/023/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>white poodle puppy in white coat
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/024/">
+                 A dog photo
+                by MARK HESSLING
+            </a>
+            <br>short-coated tan dog lying on soil
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/025/">
+                 A dog photo
+                by Mark Olsen
+            </a>
+            <br>beige and white short coated on chair near window
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/026/">
+                 A dog photo
+                by Clint McKoy
+            </a>
+            <br>adult black Labrador retriever lying near the grey textile
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/027/">
+                 A rabbit photo
+                by Sincerely Media 
+            </a>
+            <br>white rabbit
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/028/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>adult Cavalier King Charles Spaniel dog
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/grid/photos/029/">
+                 A dog photo
+                by Melissa Keizer
+            </a>
+            <br>black and white short coated dog on red and white coca cola signage
+        </li>
+        
+    </ul>
+</div>
+
+<nav class="pagination-nav">
+    <a href="/cpsc349-project2/grid/1/">&lt;-Previous</a> 
+    
+    
+    <span>3</span>
+    
+    <a href="/cpsc349-project2/grid/3/" >Next-&gt;</a>
+    
+</nav>
+    </main>
+
+    <div class="side-content">
+        <a href="/cpsc349-project2/">Base Home</a> 
+        <a href="/cpsc349-project2/grid">Grid Home</a>
+        <a href="/cpsc349-project2/flex">Flex Home</a>
+        <a href="/cpsc349-project2/tail">Tail Home</a>
+        <a href="/cpsc349-project2/aboutGrid">About Us</a> 
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>
+              &copy; Copyright 2021 <a href="https://github.com/quentinmay/cpsc349-project2">Team 5</a>
+            </p>
+            <p>
+              Pet photos from <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

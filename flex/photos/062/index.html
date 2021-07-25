@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/flex.css">
+    <title>Pet Photos</title>
+     <style>
+   :root {
+  --red: 39;
+  --green: 54;
+  --blue: 69;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>Pet Photos</span>
+        </div>
+
+        <div class="header-nav">
+            <a href="/cpsc349-project2/">Base Home</a> 
+            <a href="/cpsc349-project2/grid"> Grid Home</a>
+            <a href="/cpsc349-project2/flex"> Flex Home</a>
+            <a href="/cpsc349-project2/tail"> Tail Home</a>
+            <a href="/cpsc349-project2/aboutFlex">About Us</a> 
+        </div>
+    </header>
+
+    <main>
+        <div class="photo">
+    <div class="pet-photo">
+        <figure>
+        <img src="https://images.unsplash.com/photo-1550256076-d0200980e4ff" height="600" />
+        <figcaption>Her smile says it all. Relief because I’m not getting replaced. Contentedness because I have a new friend. Fatigue because new puppies are exhausting. Happiness because life is full.</figcaption>
+    </figure>
+
+    </div>
+    
+    <div class="picture-details">
+        <p><b>Photo by</b> Carissa Weiser: <a href="https://unsplash.com/@carissaweiser">https://unsplash.com/@carissaweiser</a></p>
+        
+    
+        
+        <p><b>Camera Model:</b> </p>
+        
+    
+        
+        <p><b>Views:</b> 467053</p>
+        
+    </div>
+
+
+</div>
+    </main>
+    
+    <footer>
+        <div class="footer-text">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="footer-nav">
+            <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a> 
+        </div>
+    </footer>
+</body>
+
+</html>

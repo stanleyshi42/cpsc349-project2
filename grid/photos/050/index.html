@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/grid.css">
+    <title>Pet Photos</title>
+    <style>
+    :root {
+    --red: 213;
+    --green: 189;
+    --blue: 124;
+
+      --accessible-color: calc(
+        (
+          (
+            (
+              (var(--red) * 299) +
+              (var(--green) * 587) +
+              (var(--blue) * 114)
+            ) / 1000
+          ) - 128
+        ) * -1000
+      );
+    }
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+  <header>
+      <div class="header-text">
+          <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+          <span>Pet Photos</span>
+      </div>
+  </header>
+
+    <main>
+        <div class="photo">
+    <div class="pet-photo">
+        <figure>
+        <img src="https://images.unsplash.com/photo-1574235664854-92e1da7d229a" height="600" />
+        <figcaption>A cat sitting in front of a victorian terrace house</figcaption>
+    </figure>
+
+    </div>
+    
+    <div class="picture-details">
+        <p><b>Photo by</b> Nicolas Gonzalez: <a href="https://unsplash.com/@mrngonzalez">https://unsplash.com/@mrngonzalez</a></p>
+        
+    
+        
+        <p><b>Camera Model:</b> ILCE-7M3</p>
+        
+    
+        
+        <p><b>Views:</b> 582128</p>
+        
+    </div>
+</div>
+    </main>
+
+    <div class="side-content">
+        <a href="/cpsc349-project2/">Base Home</a> 
+        <a href="/cpsc349-project2/grid">Grid Home</a>
+        <a href="/cpsc349-project2/flex">Flex Home</a>
+        <a href="/cpsc349-project2/tail">Tail Home</a>
+        <a href="/cpsc349-project2/aboutGrid">About Us</a> 
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>
+              &copy; Copyright 2021 <a href="https://github.com/quentinmay/cpsc349-project2">Team 5</a>
+            </p>
+            <p>
+              Pet photos from <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

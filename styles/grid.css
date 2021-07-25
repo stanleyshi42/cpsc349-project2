@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+SC&display=swap');
+a{
+    color: #007BFF;
+    transition: background-color .5s;
+    text-decoration: none;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+a:hover{
+    background-color: gold;
+}
+
+body{
+    
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas:
+        "hd hd"
+        "nav nav"
+        "links phts"
+        "pagination ."
+        "ft ft";
+
+    margin: 0px;
+    font-family: 'Encode Sans SC', sans-serif;
+}
+
+header{
+    grid-area: hd;
+
+    text-align: center;
+    padding-top: 30px;
+    background-color: orange;
+}
+
+#logo{
+    width: auto;
+    height: 64px;
+    float: left;
+}
+
+.header-text{
+    color:black;
+    padding-left: 30px;
+    text-align: left;
+    font-size: 32pt;
+}
+
+nav{
+    text-align: center;
+}
+
+/* Help from:
+   https://www.w3schools.com/howto/howto_js_topnav.asp */
+.header-nav a{
+    float: left;
+    padding: 14px 16px;
+    font-size: 16pt;
+}
+
+.header-nav a:hover{
+    background-color: coral;
+}
+
+main{
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 50px;
+    padding-top: 25px;
+}
+
+/* .pagination-list {
+    grid-area: links;
+} */
+
+
+
+.pet-link {
+    grid-area:links;
+}
+
+.pagination-list a{
+
+    font-size: 16pt;
+}
+
+.pagination-nav{
+    grid-area: pagination;
+
+    margin-top: 25px;
+    text-align: left;
+}
+
+.pagination-nav *{
+    width: 10%;
+    padding: 10px;
+    text-align: center;
+    float: left;
+}
+
+.photo{
+    max-width: 100%;
+    height: auto;
+}
+
+.pet-photo{
+    grid-area: phts;
+    text-align: left;
+}
+
+.picture-details{
+    grid-area: links;
+    text-align: left;
+}
+
+footer{
+    grid-area: ft;
+    padding-top: 50px;
+}
+
+.footer-text{
+    padding: 0;
+    text-align: center;
+    color: grey;
+    clear: left;
+}
+
+.footer-nav{
+    text-align: center;
+}
+
+figure{
+    margin: 0;
+}
+
+figure > img {
+    border-radius: 10px;
+    max-width: 80%;
+    height: auto;
+    filter:drop-shadow(5px 5px 5px rgb(65, 65, 65));
+}
+
+.side-content {
+    grid-area: nav;
+}
+
+.side-content a{
+    padding: 10px;
+    font-size: 16pt;
+    display: block;
+    text-align: center;
+    background-color: orange;
+    color: black;
+}
+
+.side-content a:hover{
+    background-color: coral;
+}
+
+
+span {
+    
+    font-family: 'Encode Sans SC', sans-serif;
+}

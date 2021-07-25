@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
+    <title>Pet Photos</title>
+     <style>
+   :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body class="flex flex-wrap justify-center m-0 font-serif">
+    <header class="w-full pt-2.5 mb-0 bg-gray-200">
+        <div class="text-left text-3xl font-bold pl-5">
+            <img class="w-auto float-left h-16" id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>Pet Photos</span>
+        </div>
+
+        <div class="pl-4 pr-4 text-center text-xl font-serif">
+                <a class="pl-4 pr-4 text-center text-xl font-serif hover:bg-gray-100 text-blue-700" href="/cpsc349-project2/">Base Home</a> 
+                <a class="pl-4 pr-4 text-center text-xl font-serif hover:bg-gray-100 text-blue-700" href="/cpsc349-project2/grid"> Grid Home</a>
+                <a class="pl-4 pr-4 text-center text-xl font-serif hover:bg-gray-100 text-blue-700" href="/cpsc349-project2/flex"> Flex Home</a>
+                <a class="pl-4 pr-4 text-center text-xl font-serif hover:bg-gray-100 text-blue-700" href="/cpsc349-project2/tail"> Tail Home</a>
+                <a class="pl-4 pr-4 text-center text-xl font-serif hover:bg-gray-100 text-blue-700" href="/cpsc349-project2/aboutTail">About Us</a> 
+        </div>
+    </header>
+
+    <main class="w-4/5 h-4/5 p-12 pt-6">
+        <p>
+    Pet photos from
+    <a class="text-blue-700" href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/054/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1555699240-a4c509eb752f"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/054/">
+                A dog photo
+                by Sharon McCutcheon
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/055/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1566553308382-c5ab8ddb2ce1"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/055/">
+                A dog photo
+                by Jess @ Harper Sunday
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/056/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1546191559-f4d15569a362"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/056/">
+                A cat photo
+                by Cole Keister
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/057/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1579084659629-d24f785cfec5"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/057/">
+                A dog photo
+                by Jay Short
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/058/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1474201249988-1c597f903bf8"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/058/">
+                A dog photo
+                by Elias Ehmann
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/059/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1542317858-043bf4d34f9f"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/059/">
+                A dog photo
+                by Cole Keister
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/060/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1572454846630-c16111e48e7e"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/060/">
+                A cat photo
+                by Alfons Taekema
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/061/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1580462766253-b8020c73e440"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/061/">
+                A dog photo
+                by Sincerely Media 
+            </a>
+        </div>
+    
+        <div class="float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300">
+            <a href="/cpsc349-project2/tail/photos/062/">
+                <img class= "h-36 w-36 mx-auto rounded-full shadow-2xl" src="https://images.unsplash.com/photo-1550256076-d0200980e4ff"/>
+            </a>
+            <br>
+            <a class="text-blue-700" href="/cpsc349-project2/tail/photos/062/">
+                A dog photo
+                by Carissa Weiser
+            </a>
+        </div>
+    
+</div>
+
+<div class="w-full h-full space-x-10">
+    <a class="text-blue-700" href="/cpsc349-project2/tail/5/">&lt;-Previous</a> 
+    
+    
+    <span>7</span>
+    
+    <a class="text-blue-700" href="/cpsc349-project2/tail/7/" >Next-&gt;</a>
+    
+</div>
+    </main>
+
+    <footer class="w-full">
+        <div class="text-center text-gray-400 clear-left">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="text-center text-blue-700">
+              <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a> 
+        </div>
+    </footer>
+</body>
+
+</html>

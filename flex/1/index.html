@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/flex.css">
+    <title>Pet Photos</title>
+     <style>
+   :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-text">
+            <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>Pet Photos</span>
+        </div>
+
+        <div class="header-nav">
+            <a href="/cpsc349-project2/">Base Home</a> 
+            <a href="/cpsc349-project2/grid"> Grid Home</a>
+            <a href="/cpsc349-project2/flex"> Flex Home</a>
+            <a href="/cpsc349-project2/tail"> Tail Home</a>
+            <a href="/cpsc349-project2/aboutFlex">About Us</a> 
+        </div>
+    </header>
+
+    <main>
+        <p>
+    Pet photos from
+    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div class="pagination-list">
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/009/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1548620848-d375c7919ea2"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/009/">
+                A cat photo
+                by Andreea Popa
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/010/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1554300668-50f3521dc276"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/010/">
+                A dog photo
+                by Neil Cooper
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/011/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1577447073438-c6b887157c24"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/011/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/012/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1565599254283-2ec79d08735c"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/012/">
+                A dog photo
+                by Paul Kapischka
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/013/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1577447278822-37801be21738"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/013/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/014/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1577447161356-a9e4dcca6964"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/014/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/015/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1577447073054-d27e4c6f2ecb"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/015/">
+                A dog photo
+                by FLOUFFY 
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/016/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1582001962130-78c8053f186e"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/016/">
+                A dog photo
+                by Jay Wennington
+            </a>
+        </div>
+    
+        <div class="pagination-entry">
+            <a href="/cpsc349-project2/flex/photos/017/">
+                <img class="thumbnail" src="https://images.unsplash.com/photo-1531704118376-ec637130bfa0"/>
+            </a>
+            <br>
+            <a href="/cpsc349-project2/flex/photos/017/">
+                A cat photo
+                by Eduardo Mallmann
+            </a>
+        </div>
+    
+</div>
+
+<div class="pagination-nav">
+    <a href="/cpsc349-project2/flex/">&lt;-Previous</a> 
+    
+    
+    <span>2</span>
+    
+    <a href="/cpsc349-project2/flex/2/" >Next-&gt;</a>
+    
+</div>
+    </main>
+    
+    <footer>
+        <div class="footer-text">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="footer-nav">
+            <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a> 
+        </div>
+    </footer>
+</body>
+
+</html>

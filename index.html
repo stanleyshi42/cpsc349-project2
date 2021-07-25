@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/tailwind.css">
+    <link rel="stylesheet" href="/cpsc349-project2/styles/main.css">
+    <title>Pet Photos</title>
+    <style>
+   :root {
+  --red: ;
+  --green: ;
+  --blue: ;
+
+  --accessible-color: calc(
+    (
+      (
+        (
+          (var(--red) * 299) +
+          (var(--green) * 587) +
+          (var(--blue) * 114)
+        ) / 1000
+      ) - 128
+    ) * -1000
+  );
+}
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style> 
+     
+
+</head>
+
+<body>
+    
+    <header>
+        <div class="header-text">
+            <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+            <span>Pet Photos</span>
+        </div>
+
+        <div class="header-nav">
+            <nav>
+                <a href="/cpsc349-project2/">Base Home</a> 
+                <a href="/cpsc349-project2/grid"> Grid Home</a>
+                <a href="/cpsc349-project2/flex"> Flex Home</a>
+                <a href="/cpsc349-project2/tail"> Tail Home</a>
+                <a href="/cpsc349-project2/about">About Us</a> 
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <p>
+    Pet photos from
+    <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+        Unsplash
+    </a>
+</p>
+<div class="pagination-list">
+    <ul>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/000/">
+                 A dog photo
+                by Jared Murray
+            </a>
+            <br>two brown short-coated dogs laying on bed
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/001/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>white and brown long coated small dog in pink hoodie
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/002/">
+                 A dog photo
+                by Alan Quirvan
+            </a>
+            <br>black and white border collie
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/003/">
+                 A dog photo
+                by April Walker
+            </a>
+            <br>woman carrying tan poodle puppy
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/004/">
+                 A dog photo
+                by LongX Music
+            </a>
+            <br>short-coated white dog
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/005/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>short-coated black dog lying on ground
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/006/">
+                 A dog photo
+                by Carissa Weiser
+            </a>
+            <br>black puppy on blue padded couch
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/007/">
+                 A cat photo
+                by Paolo Nicolello
+            </a>
+            <br>black cat on black textile
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/008/">
+                 A dog photo
+                by FLOUFFY 
+            </a>
+            <br>fawn pug wearing red and white striped shirt
+        </li>
+        
+        <li>
+            <a href="/cpsc349-project2/base/photos/009/">
+                 A cat photo
+                by Andreea Popa
+            </a>
+            <br>close-up photography of bombay cat
+        </li>
+        
+    </ul>
+</div>
+
+<nav class="pagination-nav">
+    <span></span>
+    
+    <span>1</span>
+    
+    <a href="/cpsc349-project2/1/" >Next-&gt;</a>
+    
+</nav>
+    </main>
+
+    <footer>
+        <div class="footer-text">
+            <span>&copy; Copyright 2021 Team 5</font>
+        </div>
+
+        <div class="footer-nav">
+            <nav>
+                <a href="https://github.com/quentinmay/cpsc349-project1">GitHub</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+
+</html>

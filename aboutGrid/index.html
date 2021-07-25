@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/cpsc349-project2/styles/grid.css">
+    <title>Pet Photos</title>
+    <style>
+    :root {
+    --red: ;
+    --green: ;
+    --blue: ;
+
+      --accessible-color: calc(
+        (
+          (
+            (
+              (var(--red) * 299) +
+              (var(--green) * 587) +
+              (var(--blue) * 114)
+            ) / 1000
+          ) - 128
+        ) * -1000
+      );
+    }
+
+body {
+  color:
+    rgb(
+      var(--accessible-color),
+      var(--accessible-color),
+      var(--accessible-color)
+    );
+  background-color:
+    rgb(
+      var(--red),
+      var(--green),
+      var(--blue)
+    );
+}
+
+    </style>
+</head>
+
+<body>
+  <header>
+      <div class="header-text">
+          <img id="logo" alt="logo" src="https://www.stcharlesmn.org/wp-content/uploads/cat-and-dog-transparent-background-free-png-images-dogs-and-cats-png-472_261.png">
+          <span>Pet Photos</span>
+      </div>
+  </header>
+
+    <main>
+        <h2>About Us</h2>
+<p>Team 5</p>
+<p> Christopher Millones</p>
+<p> Quentin May</p>
+<p> Stanley Shi</p>
+<p> Joe Rico</p>
+
+<b>Project Description: In this project, we used Unsplash, which is a website that has a collection of pictues. Team 5 worked collectively to extract information about pet photos from the LIte vesion of the Unspash Dataset and used it to construct a website. We used a tool called a Static Site Generator to create the HTML for this site. Together we addressed shortcoming such as unused metadata from the Unslash Dataset, missing basic sections of the document, and the badly-forned and invalid HTML.<br><br> Our team members listed above worked on different tasks: <br>Christopher Millones worked on adding additional features to bring more life to our website, <br>Quentin May worked creating individual pages for each photo, <br>Stanley Shi worked on enhancing the site-wide layout,<br> and Joe Rico added an about us page </b>
+
+<p><a href="https://github.com/quentinmay/cpsc349-project1.git">GitHub</a></p>
+    </main>
+
+    <div class="side-content">
+        <a href="/cpsc349-project2/">Base Home</a> 
+        <a href="/cpsc349-project2/grid">Grid Home</a>
+        <a href="/cpsc349-project2/flex">Flex Home</a>
+        <a href="/cpsc349-project2/tail">Tail Home</a>
+        <a href="/cpsc349-project2/aboutGrid">About Us</a> 
+    </div>
+
+    <footer>
+        <div class="footer-text">
+            <p>
+              &copy; Copyright 2021 <a href="https://github.com/quentinmay/cpsc349-project2">Team 5</a>
+            </p>
+            <p>
+              Pet photos from <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
