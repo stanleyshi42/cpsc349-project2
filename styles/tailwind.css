@@ -677,6 +677,13 @@ video {
   color: rgba(29, 78, 216, var(--tw-text-opacity));
 }
 
+.photo-size{
+  margin: auto;
+  height: auto;
+  max-width: 28rem;
+  text-align: center;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
