@@ -2,11 +2,11 @@
 layout: baseFlex
 ---
 <div class="photo">
-    <div class="pet-photo">
+    <div>
     {{ content }}
     </div>
     {% if photographer_username %}
-    <div class="picture-details">
+    <div>
         <p><b>Photo by</b> {{photographer_first_name}} {{photographer_last_name}}: <a href="https://unsplash.com/@{{photographer_username }}">https://unsplash.com/@{{photographer_username }}</a></p>
         {% endif %}
     

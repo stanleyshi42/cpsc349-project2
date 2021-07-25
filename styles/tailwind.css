@@ -24,4 +24,8 @@
     @apply text-blue-700;
   }
 
+  .photo-size{
+    @apply max-w-md h-auto m-auto text-center;
+  }
+
 }
