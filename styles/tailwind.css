@@ -16,4 +16,12 @@
     @apply h-36 w-36 mx-auto rounded-full shadow-2xl;
   }
 
+  .pagination-cover{
+    @apply float-left w-2/6 h-auto pt-2 pb-2 text-center hover:bg-gray-300;
+  }
+
+  .link-color{
+    @apply text-blue-700;
+  }
+
 }
