@@ -5,3 +5,6 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("styles/grid.css");
     eleventyConfig.addPassthroughCopy("styles/flex.css");
 };
+module.exports = {
+    pathPrefix: "/cpsc349-project2"
+};
