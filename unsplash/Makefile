@@ -41,10 +41,12 @@ photos.tsv: photos.tsv000 colors.tsv photos.sql
 	mkdir -p ../flex
 	mkdir -p ../grid
 	mkdir -p ../tail
+	mkdir -p ../tailReduce
 	mkdir -p ../base/photos
 	mkdir -p ../flex/photos
 	mkdir -p ../grid/photos
 	mkdir -p ../tail/photos
+	mkdir -p ../tailReduce/photos
 
 	python3 photos.py $<
 
